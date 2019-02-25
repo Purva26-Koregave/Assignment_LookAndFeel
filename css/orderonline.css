@@ -69,9 +69,17 @@ img {vertical-align: middle;}
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -112,16 +120,63 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 .bg1{
-background-image: url("../img/bg1.jpg");
+background-image: url("img/bg1.jpg");
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
 background-size: cover;
 }
 .bg2{
 background-color:#404040;
-background-repeat: no-repeat;
-  background-size: auto;
 }
-div.relative {
+
+.bgimg {
+  /* Background image */
+  background-image: url('../img/delivery.jpg');
+  /* Full-screen */
+  height: 100%;
+  /* Center the background image */
+  background-position: center;
+  /* Scale and zoom in the image */
+  background-size: cover;
+  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
   position: relative;
-  left: 30px;
-  border: 3px solid #73AD21;
+  /* Add a white text color to all elements inside the .bgimg container */
+  color: white;
+  /* Add a font */
+  font-family: "Courier New", Courier, monospace;
+  /* Set the font-size to 25 pixels */
+  font-size: 25px;
 }
+
+/* Position text in the top-left corner */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+
+/* Style the <hr> element */
+
+ .commingsoon{
+        
+    margin-top: -135px;
+
+ }

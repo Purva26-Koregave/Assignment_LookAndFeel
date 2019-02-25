@@ -69,9 +69,17 @@ img {vertical-align: middle;}
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -117,11 +125,66 @@ background-size: cover;
 }
 .bg2{
 background-color:#404040;
-background-repeat: no-repeat;
-  background-size: auto;
 }
-div.relative {
-  position: relative;
-  left: 30px;
-  border: 3px solid #73AD21;
+   .bg1gallery{  
+    margin-left: 25%;
+    margin-right: 25%;
+    } 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+  margin:5%;
+  color:black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 25%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+    .page{
+        
+    margin-left: 20%;
+    margin-right: 20%;
+
+    }
